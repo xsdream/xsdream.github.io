@@ -1,18 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<style>
-		.hx{
-			color:red;
-			footsize:32px;
-		}
-		
-	</style>
-</head>
-<body>
-  <p class="hx">黄鑫是谁的儿子？</P>
-  <p class="hx">当然是我的儿子</P>
-</body>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			/*全局reset*/
+			* {}{
+        		margin: 0;
+        		padding: 0;
+			}
+			.outside{
+				
+				width: 1500px;
+				margin: 0 auto;
+			}
+			#first{
+				height:150px ;
+				background: url(img/study.png);
+				
+			}
+			#second{
+				height:500px;
+				overflow: hidden;
+			}
+			#third{
+				height:200px;
+			}
+			/*大拇指字体*/
+			#big_toe{
+				font-family:仿宋 ;
+				color: orangered;
+				Font-size:100px;
+				position: relative;
+				bottom: 30px;
+				left: 200px;
+			}
+			/*点击登录字体*/
+			#enter{
+				
+				width:500px;
+				position: relative;
+				left: 1000px;
+				bottom: 160px;
+			}
+			#enter span{
+				font-family: "微软雅黑";
+				color: black;
+				font-size: 20px;
+				font-weight: 700;
+			}
+			.advertising{
+				
+				height: 500px;
+				width: 150px;
+			}
+			#advertising_1{
+				position: fixed;
+				top: 150px;
+				left: 30px;
+			}
+			#advertising_2{
+				position:fixed;
+				right:30px;
+				top: 150px;
+				
+			}
+			/*轮播图500*700px*/
+			#n_play{
+				
+				height:500px ;
+				width:700px;
+				position:relative;
+				left: 400px;
+			}
+			#n_play img{
+			
+			}
+			.approve{
+				height: 30px;
+				position:relative;
+				left:500px;
+				top: 130px;
+				 
+			}
+		</style>
+	</head>
+	<body>
+		<div id="first" class="outside">
+				<img src="img/big.jpg" />
+				<span id="big_toe">大拇指视频网</span>
+				<!--头部快捷选项-->
+				<div id="enter">
+					<span>点击登录&nbsp;&nbsp;<span>
+					<span>微信&nbsp;&nbsp;</span>
+					<span>网站导航&nbsp;&nbsp;</span>
+					<span>语言[简体中文]</span>
+				</div>
+				
+		</div>
+		<div class="advertising" id="advertising_1">
+			<img src="img/adver_1.png" alt="广告1" />
+		</div>
+		<div id="second" class="outside">
+			<!--轮播图-->
+			<div id="n_play" >
+				<img src="img/n_play_1.png" alt="轮播图1" />
+				<img src="img/n_play_2.png" alt="轮播图2" />
+				<img src="img/n_play_3.png" alt="轮播图3" />
+				<img src="img/n_play_4.png" alt="轮播图4" />
+			</div>
+		</div>
+		<div class="advertising" id="advertising_2">
+			<img src="img/adver_2.png" alt="广告2" />
+		</div>
+		<div id="third" class="outside">
+			<img src="img/approve_img_1.png" alt="认证图标"  class="approve"/>
+			<img src="img/approve_img_2.png.png" alt="认证图标" class="approve"/>
+			<img src="img/approve_img_3.png.gif" alt="认证图标" class="approve"/>
+			<img src="img/approve_img_4.png.png" alt="认证图标" class="approve"/>
+			<img src="img/approve_img_5.png.png" alt="认证图标" class="approve"/>
+		</div>
+	</body>
 </html>
