@@ -1,0 +1,22 @@
+JSON：js的对象表达法（JavaScript Object Notation）
+是储存和交换文本信息的语法，类似于XML。但是JSON比xml更小，更快，更易解析。
+
+和js的差异性：都是键值对，但是js的键不能是字符串，但是json的键是字符串
+
+json字符串是没有操作性的，若想操作，必须转为json对象。
+
+快速生成JSON对象：
+var JSONObject= {"name":"Bill Gates","street":"Fifth Avenue New York 666"};
+
+
+
+参考手册：
+
+{"":"","":""}		 	新建json对象
+eval('(' + jsonstr + ')')	json字符串 》》》 json对象（不推荐使用，不标准的json格式也会被转换）
+$.parseJSON( jsonstr )   	json字符串 》》》 json对象（必须为标准的json字符串格式）
+JSON.parse(jsonstr)		json字符串 》》》 json对象
+JSON.stringify(jsonObj)  	json对象   》》》 json字符串
+
+序列化表单json的使用：
+待更新。。。。
