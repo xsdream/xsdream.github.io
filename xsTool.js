@@ -16,3 +16,11 @@ $(':input','#myform').each(function() {
     else if (tag == 'select')
       this.selectedIndex = -1;
   });
+
+
+/*datepicker和bootstrap模态框冲突*/
+datepicker被模态框遮住：尝试display：position   z-index
+datepicker打开会调用模态框的hide.bs.modal监听，比较诡异！
+
+validata是根据name来获取的
+validate如果要验证隐藏的input，需要将min.js文件中的ignore:":hidden"改为ignore:""
