@@ -1,0 +1,47 @@
+arguments：获得调用者传入函数的所有参数
+利用arguments.length实现可选参数：
+	function request（a，b，c）{
+		if（arguments.length==0）{
+			c=b；
+			b=null；
+		}
+	}
+
+
+
+rest参数(ES6):用来代表未定义的参数,以下是计算传入任意参数的和Demo
+	function sum(...rest) {
+  	   var value=0;
+  	   for(var a=0;a<rest.length;a++){
+              value+=rest[a];
+           }
+           return value;
+        }
+
+
+
+变量提升的概念：以下Demo不会报错，虽然y输出的是undefind，但是他的申明被提升了，等于之前var y；
+	function foo() {
+    	  var x = 'Hello, ' + y;
+    	  console.log(x);
+    	  var y = 'Bob';
+        }
+由于JavaScript的这一怪异的“特性”，请严格遵循“在函数内部首先申明所有变量”这一规则
+
+
+全局作用域：js只有一个全局作用域，都绑定都在window上，包括alert，包括顶层函数。
+jQuery通过$,把自己的代码全部放到唯一的命名空间$中去，从而大大减少了冲突！
+
+局部作用域：因为js中的作用域都是通过函数来划分的，所以就存在无法定义块级作用域（例如for循环中的变量）
+为了解决这个问题,ES6引入了let，使用let取代var，可以声明块级作用域   for（let i=0；i+100;i++）
+
+const 常量：Var API=http；大写就行了，这么low？  ES6引入了  const API=http；
+
+解构赋值：对多个变量进行赋值
+数组：var [x, y, z] = ['hello', 'JavaScript', 'ES6'];  let [, , z] = ['hello', 'JavaScript', 'ES6'];忽略了1，2元素
+对象：Demo先行
+	1.交换两个值    var x=1, y=2;    [x, y] = [y, x]
+	2.快速获得当前页面的域名和路径	  var {hostname:domain, pathname:path} = location;   
+					  那么domain就是location.hostname    path就是location.path 懂了？
+
+
