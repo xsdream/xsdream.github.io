@@ -23,7 +23,7 @@ JSON.stringify(jsonObj)  	json对象   》》》》 json字符串
 序列化表单：	serializeArray（）            》》》》                        非标准json格式对象（key都是name）
 		非标准json格式（key都是name） 》》arrayToJson附录A》》         标准的JSON字符串
 		标准的JSON字符串	 	     》》$.parseJSON(jsonstr)》》     标准的Json对象
-		标准Json对象	             》》Json.stringify(jsonObj)》》  标准的Json字符串
+		标准Json对象/JS对象	     》》Json.stringify(jsonObj)》》  标准的Json字符串
 
 
 
