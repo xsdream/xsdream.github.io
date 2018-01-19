@@ -16,7 +16,7 @@ var JSONObject= {"name":"Bill Gates","street":"Fifth Avenue New York 666"};
 eval('(' + jsonstr + ')')	json字符串 》》》》json对象（不推荐使用，不标准的json格式也会被转换）
 $.parseJSON( jsonstr )   	json字符串 》》》》 json对象（必须为标准的json字符串格式）
 JSON.parse(jsonstr)		json字符串 》》》》 json对象
-JSON.stringify(jsonObj)  	json对象   》》》》 json字符串
+JSON.stringify(jsonObj)     json对象/js对象》》》》 json字符串
 
 
 序列化表单json提交的使用：
