@@ -1,0 +1,66 @@
+对象，json对象，数组，二位数组，对象数组
+
+
+
+
+**************高阶函数：En：Higher-order function  一个函数接受另一个函数作为参数，称为高阶函数。
+function add(x, y, f) {
+    return f(x) + f(y);
+}
+add(3,-6,Math.abs)  //9        Math.abs()是求绝对值
+
+**************Array.map(func)**************
+map中传入函数，按照函数的规则得到新的array。map在这里是映射
+以下demo是用map在对象数组中取值
+var users = [
+  		{name: "张含韵", "email": "zhang@email.com"},
+ 		 {name: "江一燕",   "email": "jiang@email.com"},
+ 		 {name: "李小璐",  "email": "li@email.com"}
+	];
+	users.map(function(user){
+		console.log(user.name)
+	})
+
+
+**************Array.reduce( func(x,y) )**************  
+func中只会接受两个参数，分别是array中的第1、2个元素，按照函数的规则运算，随后与下个元素再进行运算，依次累计运算
+[x1, x2, x3, x4].reduce(f) = f(f(f(x1, x2), x3), x4)
+function product(){
+	return arr.reduce(function(x,y){
+	return x*y //1*2*3*4
+}) 
+product([1,2,3,4]);//24
+
+
+**************filter**************
+Array.filter(function(element，index,self){
+		element是元素本身
+		index是下标
+		self是数组本身
+	    }) 
+按照函数规则来过滤array，x代表每个数组中的值。filter中的函数类似于一个筛选函数
+var arr = [1, 2, 4, 5, 6, 9, 10, 15];
+var r = arr.filter(function (x) {
+    return x % 2 !== 0;
+});
+r; // [1, 5, 9, 15]
+看看下面的数组去重Demo：
+arr.filter(function (element, index, self) {
+    return self.indexOf(element) === index;
+});
+尝试用filter筛选出素数
+
+
+**************sort 排序算法 ************** 
+忽略js引擎的内部算法-冒泡排序换位排序
+array.sort（function（x1，x2）{
+	//排序规则
+	if（x1 < x2）{ 
+		return -1;//-1代表左移
+	}
+	if(x1 >x2){ 
+		return 1//1代表右移
+	};
+	return 0;//相等
+}）
+
