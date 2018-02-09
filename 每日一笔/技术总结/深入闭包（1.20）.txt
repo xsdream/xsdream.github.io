@@ -9,11 +9,11 @@
 链式作用域：在f2中，你可以访问f1的变量，但是在f1中访问不到f2的变量
 　function f1(){
 
-　　　　var n=999;
+　　var n=999;
 
-　　　　function f2(){
-　　　　　　alert(n); // 999
-　　　　}
+　　function f2(){
+　　　　alert(n); // 999
+　　}
 
 　}
 
