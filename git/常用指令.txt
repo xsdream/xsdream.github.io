@@ -23,6 +23,7 @@ git branch 		查看分支数目，*代表当前HEAD指向的分支
 git checkout master 	切换回主分支
 git merge dev 		将dev分支合并到master
 git branch -d dev	删除掉dev分支
+git status		查看冲突文件（both modified）
 
 
 
