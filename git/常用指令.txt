@@ -24,7 +24,7 @@ git checkout master 	切换回主分支
 git merge dev 		将dev分支合并到master
 git branch -d dev	删除掉dev分支
 git status		查看冲突文件（both modified）
-
+git log --graph --pretty=oneline --abbrev-commit 查看分支合并图
 
 
 
