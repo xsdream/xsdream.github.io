@@ -1,3 +1,4 @@
+基础操作：
 cat fileName 查看某个文件
 git init
 git add 
@@ -12,3 +13,29 @@ git checkout -- fileName
 git reset 拉回暂存区所有
 git reset HEAD fileName  拉回暂存区一个文件
 git rm     删除文件（checkout可以还原）
+git push origin master   
+git clone url
+
+
+分支操作：
+git checkout -b dev == git branch dev  创建dev分支 / git checkout dev 切换到dev分支
+git branch 		查看分支数目，*代表当前HEAD指向的分支
+git checkout master 	切换回主分支
+git merge dev 		将dev分支合并到master
+git branch -d dev	删除掉dev分支
+
+
+
+
+
+使用SSH赋予权限：1.本地git bash         ssh-keygen -t rsa -C "1287452068@qq.com"
+		 2.用户主目录下找.ssh  id_rsa是秘钥   id_rsa.pub是公钥
+		 3.将公钥中内容复制到权限处
+
+远程新库关联到本地git init的：git remote add origin git@github.com:xsdream/testgit.git  github可直接复制 （不常用，有clone你不用你是不是傻）
+
+git支持http和ssh，但是原生的ssh比http快
+
+
+
+
