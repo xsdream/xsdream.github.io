@@ -86,7 +86,7 @@ font-weight: 900;
 #tf-menu.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
 	color: #FFF;
-	font-size: 18px;
+	font-size: 15px;
 	letter-spacing: 1px;
 }
 .on {
@@ -128,7 +128,7 @@ font-weight: 900;
 	background-attachment: fixed;
 }
 #tf-home p.lead{
-	font-size: 26px;
+	font-size: 20px;
 	color: #e3e3e3;
 }
 
