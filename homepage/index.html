@@ -5,7 +5,8 @@
 <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--<link rel="shortcut icon" href="img/ico.ico" type="image/x-icon" />-->
-<link rel="shortcut icon" href="img/ico.jpg">
+<link rel="shortcut icon" href="img/ico.png">
+
 <title>深圳智慧金睿珠宝科技有限公司</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
@@ -27,6 +28,20 @@
 <link rel="stylesheet" type="text/css"  href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/responsive.css">
 <link rel="stylesheet" type="text/css" href="css/myStyle.css">
+
+<!--baidu map-->
+<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+
+<style type="text/css">
+
+#allmap {height: 500px;width:100%;overflow: hidden;}
+#allmap dt{font-size:14px;font-family:"微软雅黑";font-weight:bold;border-bottom:1px dotted #000;padding:5px 0 5px 5px;margin:5px 0;}
+#allmap dd{padding:5px 0 0 5px;}
+#allmap li{line-height:28px;}
+	
+</style>
+
+
 
 </head>
 <body>
@@ -50,7 +65,7 @@
 	</div>
 
 	<!-- Collect the nav links, forms, and other content for toggling -->
-	<div class="collapse navbar-collapse animated bounceIn" id="bs-example-navbar-collapse-1">
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	  <ul class="nav navbar-nav navbar-right">
 		<li><a href="#tf-home" class="page-scroll">首页</a></li>
 		<li><a href="#tf-about" class="page-scroll">关于我们</a></li>
@@ -66,10 +81,9 @@
 <div id="tf-home" class="text-center">
 	<div class="overlay">
 		<div class="content  animated fadeInUp">
-			<h1><strong class="color">多年终端零售珠宝店经验为依托</strong></h3>
+			<h1><strong class="color">智慧&nbsp;·&nbsp;金睿</strong></h3>
 			<br/>
-			<p class="lead">  <strong>立足于成为国内珠宝圈软硬件服务商 </strong>  </p>
-			<p>销售流程管理  &nbsp;&nbsp;库存管理 &nbsp;&nbsp;财务管理 &nbsp;&nbsp;会计核算  &nbsp;&nbsp;人员物料管理 &nbsp;&nbsp;经营管理<p>
+			<p class="lead">  <strong>多年终端零售珠宝店经验为依托,立足于成为国内珠宝圈软硬件服务商 </strong>  </p>
 			<a href="#tf-about" class="fa fa-angle-down page-scroll"></a>
 		</div>
 	</div>
@@ -544,22 +558,84 @@
 
 	</div>
 </div>
-
-<nav id="footer">
-	<div class="container">
-		<div class="pull-left fnav">
-			<p>Copyright &copy; 2016.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
-		</div>
-		<div class="pull-right fnav">
-			<ul class="footer-social">
-				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-				<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-			</ul>
+<div class="row">
+	<div class="col-md-2"></div>
+	<div class="col-md-8">
+		<div id="map">
+    <div class="map1" >
+        <img src="" alt="">
+        <div id="allmap">
+        </div>
+    	</div>
 		</div>
 	</div>
-</nav>
+	<div class="col-md-2" style="position: relative;top: 10%;">
+		<input class="btn btn-default btn-primary" type="button" value="start"  onclick="searchInfoWindow.open(marker);"/>
+	</div>
+</div>
+
+
+
+
+
+
+<footer style="background-image: url('img/footer-bg.jpg');" class="footer footer-fixed">
+      <div class="container" style="padding: 5% 0;">
+        <div class="row cws-multi-col">
+          <!-- widget footer-->
+          <div class="col-md-3 col-sm-6 mb-md-50">
+            <div class="widget-footer text">
+              <h3>Proway</h3>
+          
+            </div>
+          </div>
+          <!-- end widget footer-->
+          <!-- widget footer-->
+          <div class="col-md-3 col-sm-6 mb-md-50">
+            <div class="widget-footer">
+              <h3>Useful Links</h3>
+              <div class="cws_divider with-plus short-2 mb-5 mt-10"></div>
+              <ul>
+                <li><a href="#">About Us</a> <a href="#">Sitemap</a></li>
+                <li><a href="#">Contacts</a> <a href="#">FAQ</a></li>
+                <li><a href="#">Services</a> <a href="#">Awards</a></li>
+                <li><a href="#">Shop</a> <a href="#">Testimonials</a></li>
+                <li><a href="#">News</a> <a href="#">Careers</a>		</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-md-3 col-sm-6 mb-sm-50">
+          	<div class="widget-footer text">
+              <h3>Proway</h3>
+          
+           </div>
+          </div>
+          
+          <div class="col-md-3 col-sm-6">
+          	<div class="widget-footer text">
+              <h3>Proway</h3>
+          
+           </div>
+          </div>
+           
+            
+        </div>
+      </div>
+      
+      <div class="copyright"> 
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <p>smartOring; 2017.Company name All rights reserved</p>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+      <!-- end copyright-->
+      <!-- scroll top-->
+</footer>
 
 
 <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
@@ -568,6 +644,49 @@
 <script type="text/javascript" src="js/jquery.isotope.js"></script>
 <script src="js/owl.carousel.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=hl8VLOQSyncZQcZEn8jgiPA2SE42PVOr"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+
+<script type="text/javascript">
+	var map = new BMap.Map('allmap');
+	var poi1 = new BMap.Point(112.881936,28.234383);
+	
+	map.centerAndZoom(poi1, 16);
+	map.enableScrollWheelZoom();
+	
+	var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
+	    '<img src="img/jd_logo.png" alt="logo" style="float:right;zoom:1;overflow:hidden;width:95px;height:95px;margin-left:3px;"/>' +
+	    '地址：长沙市岳麓区岳麓西大道588芯城科技园2栋1903室<br/>电话：(0730)85891175<br/>简介：恒隆科技,专注于国内珠宝圈软硬件开发' +
+	    '</div>';
+	
+	//创建检索信息窗口对象
+	var searchInfoWindow = null;
+	searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+	    title  : "恒隆科技",       //标题
+	    width  : 290,             //宽度
+	    height : 105,             //高度
+	    panel  : "panel",         //检索结果面板
+	    enableAutoPan : true,     //自动平移
+	    searchTypes   :[
+	        BMAPLIB_TAB_SEARCH,   //周边检索
+	        BMAPLIB_TAB_TO_HERE,  //到这里去
+	        BMAPLIB_TAB_FROM_HERE //从这里出发
+	    ]
+	});
+	var marker = new BMap.Marker(poi1); //创建marker对象
+	marker.enableDragging(); //marker可拖拽
+	marker.addEventListener("click", function(e){
+	    searchInfoWindow.open(marker);
+	});
+	searchInfoWindow.open(marker);
+	map.addOverlay(marker); //在地图中添加marker
+	
+	//data：nav的数据
+	function contactUsFun(data){
+	    console.log(data);
+	    $('#bottom').show();
+	};
+</script>
 
 </body>
 </html>
