@@ -1,3 +1,7 @@
+.border{
+	border: 1px solid red;
+}
+
 h1{
 	font-size: 60px;
 }
@@ -5,7 +9,7 @@ h1{
 #tf-home{
 	background: url(../img/01.png);
 	background-size: cover;
-	background-position: center;
+	/*background-position: center;*/
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	color: #cfcfcf;
