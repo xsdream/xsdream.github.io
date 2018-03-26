@@ -540,7 +540,6 @@ button.btn.tf-btn.btn-default {
 /* Footer */
 nav#footer{
 	background: #222222;
-	color: #ffffff;
 	padding: 20px 0 15px 0;
 }
 nav#footer .fnav{ vertical-align: middle;}
@@ -559,10 +558,9 @@ nav#footer p{
 	font-size: 20px;
 	padding: 4px 5px;
 	border-radius: 50%;
-	color: #8c8c8c;
 	transition: all 0.5s;
 }
-#footer i.fa:hover{
+#footer i.fa:hover {
 	background: #FCAC45;
 	border-color: #FCAC45;
-	color: #ffffff;
+}

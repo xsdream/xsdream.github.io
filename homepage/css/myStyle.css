@@ -31,3 +31,8 @@ h1{
 .hover-bg h3{
 	color:#282828;
 }
+
+.copyright p{
+	font-size: 10px;
+	color: white;
+}
