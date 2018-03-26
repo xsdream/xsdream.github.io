@@ -45,10 +45,9 @@ a:focus{
 }
 
 .section-title hr{
-	border-color: #fcac45;
+	border-color: #dcc094;
 	border-width: 4px;
 	width: 60px;
-	float: left;
 	clear: both;
 }
 .clearfix:after {
@@ -114,7 +113,7 @@ font-weight: 900;
 	}
 /* Home Style */
 #tf-home{
-	background: url(../img/01.jpg);
+	background: url(../img/01.png);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -212,8 +211,6 @@ ul.about-list li span{
 	width: 40px;
 	text-align: center;
 	margin-top: 10px;
-	position: relative;
-	left: 17%;
 }
 #team{ margin: 0 auto}
 #team .item{
@@ -269,6 +266,10 @@ img.img-circle.team-img {
 /* Services Section */
 #tf-services{
 	padding: 80px 0;
+}
+
+#tf-services p{
+	color: #979797;
 }
 
 .space{
@@ -382,8 +383,11 @@ ol.type li a.active { font-weight: 700; }
 }
 .portfolio-item .hover-bg{
 	height: 260px;
-	overflow: hidden;
+	overflow: inherit;
+	z-index:1;
 	position: relative;
+	border: 1px solid white;
+	text-align: center;
 }
 
 .hover-bg .hover-text {
@@ -392,11 +396,10 @@ ol.type li a.active { font-weight: 700; }
 	margin: 0 auto;
 	color: #ffffff;
 	background: rgba(0, 0, 0, 0.66);
-	padding: 25% 0;
 	height: 100%;
 	width: 100%;
 	opacity: 0;
-    transition: all 0.5s;
+	transition: all 0.5s;
 }
 .hover-bg .hover-text>h4{
 	opacity: 0;
@@ -425,6 +428,8 @@ ol.type li a.active { font-weight: 700; }
 .hover-bg:hover .hover-text{
 	opacity: 1;
 }
+
+
 #tf-works i.fa {
 	height: 30px;
 	width: 30px;
