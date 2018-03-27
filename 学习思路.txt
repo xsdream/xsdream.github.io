@@ -10,5 +10,3 @@ angular1   angular2
 
 
 
-I am Nnew！！！！！！！！！！！！！！！
-我是创建dev加上去的
