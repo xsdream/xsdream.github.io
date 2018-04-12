@@ -1,0 +1,79 @@
+<!DOCUMENT html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="image/ico.ico" type="image/x-icon" />
+	<title>GIT知识点总结</title>
+	
+基础操作：<br>
+cat fileName 查看某个文件<br>
+git init<br>
+git add <br>
+git commit <br>
+git status<br>
+git diff<br>
+git log  / git log --pretty=oneline<br>
+git reset  --hard  版本号（HEAD）  HEAD代表当前版本 HEAD^代表上个  HEAD^^类推（慎用）<br>
+git reset 版本号  拉回commit到本地      ！！！注意--hard的不同，看注解A！！！<br>
+git reflog   历史操作记录，可以回退到之前的版本<br>
+git checkout .<br>
+git checkout -- fileName<br>
+git reset 拉回暂存区所有<br>
+git reset HEAD fileName  拉回暂存区一个文件<br>
+git rm     删除文件（checkout可以还原）<br>
+git push origin master   <br>
+git clone url<br>
+<br>
+<br>
+分支操作：<br>
+git checkout -b dev == git branch dev  创建dev分支 / git checkout dev 切换到dev分支<br>
+git branch 		查看分支数目，*代表当前HEAD指向的分支<br>
+git checkout master 	切换回主分支<br>
+git merge dev 		将dev分支合并到master<br>
+git branch -d dev	删除掉dev分支<br>
+git status		查看冲突文件（both modified）<br>
+git log --graph --pretty=oneline --abbrev-commit 查看分支合并图<br>
+
+储存区stash：接到新的工作，但是不想提交现在的代码时可以先保存代码<br>
+git stash:将本地修改储存<br>
+git stash list ：查看储存区数据<br>
+git stash pop：应用储存区数据<br>
+<br>
+<br>
+<br>
+注解A：<br>
+git reset --mixed：此为默认方式，不带任何参数的git reset，即时这种方式，它回退到某个版本，只保留源码，回退commit和add信息<br>
+git reset --soft：回退到某个版本，只回退了commit的信息。如果还要提交，直接commit即可<br>
+git reset  --hard：彻底回退到某个版本，本地的源码也会变为上一个版本的内容，慎用！<br>
+<br>
+<br>
+<br>
+
+注解B：<br>
+使用SSH赋予权限：1.本地git bash         ssh-keygen -t rsa -C "1287452068@qq.com"<br>
+		 2.用户主目录下找.ssh  id_rsa是秘钥   id_rsa.pub是公钥<br>
+		 3.将公钥中内容复制到权限处<br>
+<br>
+<br>
+<br>
+注解C：<br>
+远程新库关联到本地git init的：git remote add origin git@github.com:xsdream/testgit.git  github可直接复制 （不常用，有clone你不用你是不是傻）<br>
+<br>
+<br>
+注解D：<br>
+git支持http和ssh，但是原生的ssh比http快<br>
+
+
+
+
+
+
+
+	
+	
+</head>
+<body>
+	
+</body>
+</html>

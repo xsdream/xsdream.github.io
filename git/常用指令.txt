@@ -27,6 +27,8 @@ git branch -d dev	删除掉dev分支
 git status		查看冲突文件（both modified）
 git log --graph --pretty=oneline --abbrev-commit 查看分支合并图
 
+储存操作：当在dev分支上开发，发现需要
+
 
 
 注解A：

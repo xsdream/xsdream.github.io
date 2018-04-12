@@ -1,0 +1,26 @@
+<!DOCUMENT html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="image/ico.ico" type="image/x-icon" />
+	<title>CSS知识点总结</title>
+	
+	--------------------------------------------------------------------------
+	<h3>清除浮动：浮动元素没有高度，会影响正常的文档流</h3>
+	<span>1.给父级元素加高度<br>
+	2.父级overfloat：hidden  <br>
+	3.增加兄弟元素div style=clear:both <br>
+	4.推荐使用（使用after和zoom封装个公用类去使用）<br>
+	.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+	.clearfloat{zoom:1}</span>
+	
+	
+	
+	
+	
+</head>
+<body>
+	
+</body>
+</html>
