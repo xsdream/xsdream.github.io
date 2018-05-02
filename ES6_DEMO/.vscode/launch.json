@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "启动ES项目",
-            "url": "file:///C:/Users/cynoware/Desktop/xsdream%E7%BA%BF%E4%B8%8A%E8%B5%84%E6%BA%90GIT/xsdream.github.io/ES6%E5%AD%A6%E4%B9%A0/ES6.html",
+            "url": "file:///C:/Users/cynoware/Desktop/xsdream%E7%BA%BF%E4%B8%8A%E8%B5%84%E6%BA%90GIT/xsdream.github.io/ES6_DEMO/ES6.html",
             "webRoot": "${workspaceFolder}"
         }
     ]

@@ -23,3 +23,6 @@ document.write(patt1.exec("The best things in life are free"));
 //es6可以同时传入正则表达式和模式,模式会替代正则中的模式
 var ss=new RegExp(/abc/ig, 'i').flags;
 console.log(ss);
+
+
+//正则没具体看，以后看
