@@ -7,10 +7,16 @@ import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { AppComponent } from './app.component';
 //guo ji hua
 import { NZ_LOCALE, enUS } from 'ng-zorro-antd';
+import { HeroesComponent } from './heroes/heroes.component';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { HeroService } from './hero.service';
 
 @NgModule({
+  //zu jian  bixu  zai  zhe li  sheng ming
   declarations: [
-    AppComponent
+    AppComponent,
+    HeroesComponent,
+    HeroDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -20,6 +26,12 @@ import { NZ_LOCALE, enUS } from 'ng-zorro-antd';
     NgZorroAntdModule.forRoot()
   ],
   bootstrap: [AppComponent],
-  providers   : [ { provide: NZ_LOCALE, useValue: enUS } ],
+  providers   : [ 
+    HeroService
+  ],
 })
-export class AppModule { }
+
+
+export class AppModule { 
+  
+}

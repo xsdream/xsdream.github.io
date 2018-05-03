@@ -1,0 +1,14 @@
+<!-- 这里拿到的hero其实是父组件传递过来的selectHero -->
+<h1>详细信息：</h1>
+<div *ngIf="hero">
+    
+        <h2>{{ hero.name | uppercase }} Details :此处使用管道uppercase转换成大写</h2>
+        <div><span>id: </span>{{hero.id}}</div>
+    
+        <label>name:
+          <input [(ngModel)]="hero.name" placeholder="name">
+        </label>
+        
+</div>
+
+<h1>{{ babby }}</h1>

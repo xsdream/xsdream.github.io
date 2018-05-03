@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ng学习总结';
+  title = 'App-title';
+
+  birthday=new Date(1996,8,4);
+  
 }
 
 

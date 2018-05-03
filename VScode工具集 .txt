@@ -17,7 +17,7 @@ Npm Intellisense:require包提示
 HTMLHint:HTML代码检查工具
 
 Project Manager:可以打开多个项目 
-{安装后重新加载 > shift+alt+p搜索Project Manager: Edit Projects >选择右下角打开配置文件，选择项目路径 } 
+{安装后重新加载 >F1 搜索Project Manager: Edit Projects >选择右下角打开配置文件，选择项目路径 } 
 
 Bootstrap 3 Sinnpet:bootstrap 3提示
 
