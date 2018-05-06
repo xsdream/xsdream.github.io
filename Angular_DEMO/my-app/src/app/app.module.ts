@@ -9,25 +9,31 @@ import { AppComponent } from './app.component';
 import { NZ_LOCALE, enUS } from 'ng-zorro-antd';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
-import { HeroService } from './hero.service';
+import { HeroService } from './service/hero.service';
+import { MessagesComponent } from './messages/messages.component';
+//--modal=app zhi jie huo de  fuwu
+import { MessageService } from './service/message.service';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   //zu jian  bixu  zai  zhe li  sheng ming
   declarations: [
     AppComponent,
     HeroesComponent,
-    HeroDetailComponent
+    HeroDetailComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    NgZorroAntdModule.forRoot()
+    NgZorroAntdModule.forRoot(),
+    AppRoutingModule
   ],
   bootstrap: [AppComponent],
   providers   : [ 
-    HeroService
+    HeroService, MessageService
   ],
 })
 

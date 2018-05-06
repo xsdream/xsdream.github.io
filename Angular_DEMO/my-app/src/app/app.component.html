@@ -1,12 +1,13 @@
 
 
-                                <h2>指令</h2>>
-<h3> 全局安装cli </h3>&nbsp;&nbsp;&nbsp;<span> npm install -g @angular/cli </span><br/>
+                                <h2>指令</h2>
+<h3> 全局安装cli </h3>&nbsp;&nbsp;&nbsp;<span> npm install -g @angular/cli@1.7.4 </span><br/>
 <h3> 创建新项目 </h3>&nbsp;&nbsp;&nbsp;<span> ng new my-app </span><br/>
 <h3> 打开server服务器 </h3>&nbsp;&nbsp;&nbsp;<span>ng serve --open </span><br/>
 <h3> 创建新的组件 </h3>&nbsp;&nbsp;&nbsp;<span>ng g c heroes(ng generate component name) </span><br/>
 <h3> 创建服务 </h3>&nbsp;&nbsp;&nbsp;<span>ng g s hero(ng generate service hero) </span><br/>
 <h3> 将服务交给组件 </h3>&nbsp;&nbsp;&nbsp;<span>ng generate service hero --module=app (交给app) </span><br/>
+<h3> 添加路由 </h3>&nbsp;&nbsp;&nbsp;<span>ng generate module app-routing --flat --module=app(--flat 把这个文件放进了 src/app 中，而不是单独的目录中。  --module=app 告诉 CLI 把它注册到 AppModule 的 imports 数组中。)    </span><br/>
 
 <br>
 <br>
@@ -46,5 +47,5 @@
 
 <p>时间：The hero's birthday is {{ birthday | date }}</p>
 
-<app-heroes></app-heroes>
+<router-outlet> </router-outlet>
 

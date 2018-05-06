@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../Hero';
-import { HeroService } from '../hero.service';
+import { HeroService } from '../service/hero.service';
 
 @Component({
   selector: 'app-heroes',
@@ -25,12 +25,22 @@ export class HeroesComponent implements OnInit {
   }
 
    //获得服务中的heroe
+<<<<<<< HEAD
   getHeroes(): void {
   this.HeroService.getHeroes()
       .subscribe(heroes => this.heros = heroes);
 }
 
   ngOnInit() {
+=======
+   getHeroes(): void {
+    this.HeroService.getHeroes().subscribe(
+      heros=>this.heros=heros
+    )
+  }
+  
+   ngOnInit() {
+>>>>>>> 4c50a5443f265fdd93450292dc789b0e47e47726
     //调用这个方法，也可以在构造函数中调用，但是不推荐
     this.getHeroes();
   }
