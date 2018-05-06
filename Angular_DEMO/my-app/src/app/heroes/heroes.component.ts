@@ -25,9 +25,10 @@ export class HeroesComponent implements OnInit {
   }
 
    //获得服务中的heroe
-   getHeroes(): void {
-    this.heros = this.HeroService.getHeroes();
-  }
+  getHeroes(): void {
+  this.HeroService.getHeroes()
+      .subscribe(heroes => this.heros = heroes);
+}
 
   ngOnInit() {
     //调用这个方法，也可以在构造函数中调用，但是不推荐
