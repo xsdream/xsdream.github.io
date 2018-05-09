@@ -20,7 +20,7 @@ import { InMemoryDataService }  from './in-memory-data.service';
 
 import { HttpClientModule } from '@angular/common/http';
 
-
+import { HttpModule, JsonpModule } from '@angular/http';
 
 @NgModule({
   //zu jian  bixu  zai  zhe li  sheng ming
@@ -41,8 +41,10 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientInMemoryWebApiModule.forRoot(
     InMemoryDataService, { 
         dataEncapsulation: false 
-    }
-)
+      }
+    ),
+    HttpModule,
+    JsonpModule
   ],
   bootstrap: [AppComponent],
   providers   : [ 

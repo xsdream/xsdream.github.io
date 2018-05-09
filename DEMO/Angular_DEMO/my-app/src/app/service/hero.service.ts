@@ -5,6 +5,7 @@ import { of } from 'rxjs/observable/of'
 import { MessageService }from './message.service'
 import { HttpClient} from '@angular/common/http';
 
+
 @Injectable()
 export class HeroService {
 
@@ -12,7 +13,7 @@ export class HeroService {
 
   constructor(
     private messageService:MessageService,
-    private Http:HttpClient,
+    private Http:HttpClient
   ) { 
     
   }
@@ -28,16 +29,17 @@ export class HeroService {
   // }
 
   // 通过HttpClient来获取
-  getHeroes () {
-    debugger;
-    //请求不行
-    return this.Http.get('../../assets/HeroData.json').subscribe(
-    function(data){
-      console.log(data);
-    },function(error){
-      console.log(error);
-    })
-
+  getHeroes (){
+    return this.Http.get('/assets/HeroData.json').subscribe(
+      function(data){
+        console.log(1);
+        console.log(data);
+      },
+      function(error){
+        console.log(2);
+        console.log(error);
+      }
+    )
     // return this.Http.get<Hero[]>(this.heroesUrl)
   }
 
