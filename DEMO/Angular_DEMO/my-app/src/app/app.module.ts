@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { AppComponent } from './app.component';
 //guo ji hua
@@ -14,6 +13,14 @@ import { MessagesComponent } from './messages/messages.component';
 //--modal=app zhi jie huo de  fuwu
 import { MessageService } from './service/message.service';
 import { AppRoutingModule } from './/app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
+//只是为了配合httpclient
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService }  from './in-memory-data.service';
+
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 @NgModule({
   //zu jian  bixu  zai  zhe li  sheng ming
@@ -21,19 +28,26 @@ import { AppRoutingModule } from './/app-routing.module';
     AppComponent,
     HeroesComponent,
     HeroDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule,
     BrowserAnimationsModule,
     NgZorroAntdModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(
+    InMemoryDataService, { 
+        dataEncapsulation: false 
+    }
+)
   ],
   bootstrap: [AppComponent],
   providers   : [ 
-    HeroService, MessageService
+     HeroService,
+     MessageService
   ],
 })
 

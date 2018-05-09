@@ -1,0 +1,91 @@
+
+
+<h1 class="center">{{title}}</h1>
+
+<!-- <p>时间：The hero's birthday is {{ birthday | date }}</p> -->
+
+<nav>
+        <a routerLink="/dashboard">dashboard</a>
+        <a routerLink="/heroes">Heroes</a>
+</nav>
+
+<router-outlet> </router-outlet>
+
+<app-messages></app-messages>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="document" style="background-color: peachpuff">
+        <h2>指令</h2>
+        <h3> 全局安装cli </h3>&nbsp;&nbsp;&nbsp;<span> npm install -g @angular/cli@1.7.4 </span><br/>
+        <h3> 创建新项目 </h3>&nbsp;&nbsp;&nbsp;<span> ng new my-app </span><br/>
+        <h3> 打开server服务器 </h3>&nbsp;&nbsp;&nbsp;<span>ng serve --open </span><br/>
+        <h3> 创建新的组件 </h3>&nbsp;&nbsp;&nbsp;<span>ng g c heroes(ng generate component name) </span><br/>
+        <h3> 创建服务 </h3>&nbsp;&nbsp;&nbsp;<span>ng g s hero(ng generate service hero) </span><br/>
+        <h3> 将服务交给组件 </h3>&nbsp;&nbsp;&nbsp;<span>ng generate service hero --module=app (交给app) </span><br/>
+        <h3> 添加路由 </h3>&nbsp;&nbsp;&nbsp;<span>ng generate module app-routing --flat --module=app(--flat 把这个文件放进了 src/app 中，而不是单独的目录中。  --module=app 告诉 CLI 把它注册到 AppModule 的 imports 数组中。)    </span><br/>
+        
+        <br>
+        <br>
+        <br>
+        
+                                        <h2>概念</h2>
+        <h3>元数据：</h3>&nbsp;&nbsp;&nbsp;<span>应用程序的各个部分组合到一起，以及该应用需要哪些其它文件和库 </span><br/>
+        <h3>主从主键(父子组件属性传递)</h3>&nbsp;&nbsp;&nbsp;<span>使用@Input 可以在标签中传值 [给子的]="父的" </span><br/>
+        <br>
+        <br>
+        <br>
+        
+                                        <h2>代码</h2>
+        <h3>两个大括号：</h3>&nbsp;&nbsp;&nbsp;<span>可以将组件的值绑定到HTML中 </span><br/>
+        <h3>[(ngModel)]="hero.name"：</h3>&nbsp;&nbsp;&nbsp;<span>双向绑定 </span><br/>
+        <h3>(click)="onSelect(hero)</h3>&nbsp;&nbsp;&nbsp;<span>click事件绑定 </span><br/>
+        <h3>*ngIf=""</h3>&nbsp;&nbsp;&nbsp;<span>判断显示</span><br/>
+        <h3>*ngFor="let hero of heros"</h3>&nbsp;&nbsp;&nbsp;<span>循环显示</span><br/>
+        <h3>[class.selected]="hero === selectedHero"</h3>&nbsp;&nbsp;&nbsp;<span>动态增加class,注意后面是判断条件</span><br/>
+        
+        
+        <br>
+        <br>
+        <br>
+        
+        
+        <h2>管道：将数组转换后写入到HTML标签中使用</h2>
+        <h3> birthday | date </h3>&nbsp;&nbsp;&nbsp;<span>组件的 birthday 值通过管道操作符( | )流动到 右侧的Date 管道函数中 </span><br/>
+        
+        <br>
+        <br>
+        <br>
+        
+        -------------------------------------------------------------------------------
+</div>
+
+
