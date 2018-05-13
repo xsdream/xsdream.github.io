@@ -1,5 +1,7 @@
 Visual Studio Code插件
 
+S-CSS-HTML Formatter：右键格式化整理代码必备
+
 HTML Snippets:html提示
 
 HTML CSS Support:css提示

@@ -1,0 +1,18 @@
+<h1>*todo组件*</h1>
+<div class="hearder">
+    按Enter键添加：
+    <input type="text" [(ngModel)]='thingName' (keyup)='addThing($event)'> 
+</div>
+<h3>未完成事项：</h3>
+<ul>
+  <li *ngFor='let x of thingList;let i=index' [hidden]='x.status==0'>
+      <b (click)='endThing(i)'>{{x.thingName}}</b>---- <small (click)='deleteThing(i)'  >删除</small>
+  </li>
+</ul>
+
+<h3>已完成事项：</h3>
+<ul>
+  <li *ngFor='let x of thingList;let i=index' [hidden]='x.status==1'>
+      <b>{{x.thingName}}</b>---- <small (click)='deleteThing(i)' >删除</small>
+  </li>
+</ul>

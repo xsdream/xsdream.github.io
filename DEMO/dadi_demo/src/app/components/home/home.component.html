@@ -1,0 +1,19 @@
+<h1>*home组件*</h1>
+<h2>{{msg}}</h2>
+
+<button (click)='setMsg()'>这是一个执行方法</button>
+
+<button (click)='bool=!bool'>我会改变bool</button>
+
+<h4>现在bool是:{{bool}}</h4>
+
+<h3 *ngIf='bool'>我是在bool是true的情况下显示</h3>
+
+<input type="text" (keyup)='keyup($event)'>
+
+<hr>
+
+<input type="text" [(ngModel)]='search'>
+
+<button >{{search}}</button>
+

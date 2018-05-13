@@ -1,0 +1,12 @@
+<h1>***app是根组件***</h1>
+
+<a routerLink="/home" routerLinkActive='active'>home</a>
+<a routerLink="/news" routerLinkActive='active'>news1</a>
+<a routerLink="/news2" routerLinkActive='active'>news2</a>
+<a routerLink="/todo" routerLinkActive='active'>todo</a>
+
+<button class="btn" (click)=goNews();>通过js实现跳转到新闻页</button>
+
+<router-outlet></router-outlet>
+
+<button nz-button [nzType]="'primary'">测试按钮</button>
