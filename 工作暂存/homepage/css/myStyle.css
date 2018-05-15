@@ -1,0 +1,71 @@
+.border{
+	border:1px solid red;
+}
+
+h1{
+	font-size: 60px;
+}
+.left{
+	float: left;
+}
+.systemColor{
+	color: #a4a4a4;
+}
+#tf-home{
+	background: url(../img/01.png);
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: #cfcfcf;
+}
+
+.systemImg{
+	margin: 0 auto;margin-top: 100px
+}
+
+.tf-services strong{
+	color:#5a5a5a;
+}
+
+.hover-bg h3{
+	color:#282828;
+}
+
+.copyright p{
+	font-size: 10px;
+	color: white;
+}
+
+#tf-menu .container{
+	padding: 0 5%;
+}
+
+.service-img{
+	width: 80px;
+	height: 80px;
+}
+#tf-testimonials p{
+	font-size: 14px;
+	letter-spacing:3px;
+}
+
+
+/* 
+/* 手机样式 */
+@media(max-width:767px){
+
+	.pc-view{
+		display: none;
+	}
+} 
+
+/* pc */
+@media(min-width:767px){
+	
+	.mobile-view{
+		display: none;
+		float:right ;
+	}
+	
+} 
