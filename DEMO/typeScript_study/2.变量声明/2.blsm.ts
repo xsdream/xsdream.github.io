@@ -178,6 +178,5 @@ console.log(passthrough);
 
 let p={name:'许胜',age:'xs'}
 
-let {ww, e}: {aw: string, e: number} = p;
 
 ///看到属性命名
