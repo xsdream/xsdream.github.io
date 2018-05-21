@@ -1,3 +1,29 @@
 删除掉字符串的最后一个字符：ids = ids.substring(0, ids.length - 1);
+
 拆分字符串：ids.split(',')  返回一个数组
+
 jquery.each循环：$.each(数组, function(index, value) {}
+
+字符串去掉左右两侧空格：str.replace(/(^\s*)|(\s*$)/g, "")
+
+bootstrap-table中根据行id去取值？   data-unique-id="id"  先设置id为唯一     .bootstrapTable('getRowByUniqueId',id);取值  （table只能用id定位）
+
+
+
+API_BARTER_ALLOT        API_VERIFY_BARTER_ALLOT        API_REJECT_BARTER_ALLOT       API_CANCEL_BARTER_ALLOT
+
+
+
+
+   page.dialogBarterAllotChange = createBarterAllotChangeDialog({
+          id : 'jBoxBarterAllotChange'
+        });
+
+
+page.dialogBarterAllotChange.destroy();
+
+
+
+  
+
+
