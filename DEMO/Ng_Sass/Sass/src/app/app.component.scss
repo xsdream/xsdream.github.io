@@ -1,0 +1,77 @@
+//单独定义变量
+// $highlight-color: #F90;
+// .selected {
+//   border: 1px solid $highlight-color;
+// }
+
+//变量中引用其他变量
+$highlight-color: #F90;
+$highlight-border: 1px solid $highlight-color;
+.selected {
+  border: $highlight-border;
+}
+
+//css嵌套
+
+#center{
+    border: $highlight-border;
+    height: 200px;
+    width: 500px;
+    .title{
+        border: $highlight-border;
+        .text{
+            color: red;
+            font-size: 30px;
+        }
+    }
+}
+
+//伪类选择器的使用 标识符&  相当于当前元素
+.article a {
+    color: blue;
+    &:hover { color: red }
+}
+
+
+#content aside {
+    color: red;
+    body.ie & { color: green }
+  }
+
+
+//在区域类使用群组选择器
+.container,.container2 {
+    h1, h2, h3 {color: #F90;}
+}
+
+
+//组合选择器的使用
+article {
+    ~ article { border-top: 1px dashed #ccc }
+    > section { background: #eee }
+    dl > {
+      dt { color: #333 }
+      dd { color: #555 }
+    }
+    nav + & { margin-top: 0 }
+}
+//编译后
+article ~ article { border-top: 1px dashed #ccc }
+article > footer { background: #eee }
+article dl > dt { color: #333 }
+article dl > dd { color: #555 }
+nav + article { margin-top: 0 }
+
+//将属性作为选择器的用法
+nav {
+    border: {
+    style: solid;
+    width: 1px;
+    color: #ccc;
+    }
+}
+
+//@import
+//sass局部文件的文件名以下划线开头     导入themes/_night-sky.scss这个局部文件里的变量，你只需在样式表中写@import "themes/night-sky";
+
+//3-2. 默认变量值;

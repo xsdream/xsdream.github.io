@@ -1,0 +1,7 @@
+如果你需要修改端口号，可以用 ng serve --port ****来进行指定
+想让编译的包更小一些，可以使用 ng serve --prod
+想看到项目编译之后的产物，请运行 ng build。构建最终产品版本可以加参数，ng build --prod。
+cnpm uninstall -g @angular/cli
+ng 命令生成出来的组件都会带上一个 app 前缀，如果你不喜欢，可以在 angular-cli.json 里面修改 prefix 配置项，设置为空字符串将会不带任何前缀
+
+
