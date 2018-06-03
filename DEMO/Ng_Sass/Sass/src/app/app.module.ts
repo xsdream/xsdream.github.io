@@ -7,6 +7,8 @@ import { HeadComponent } from './head/head.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Child11Component } from './child1/child1.component';
 
+import { AlertModule } from 'ng2-bootstrap';
+
 @NgModule({
   declarations: [
     AppComponent,
