@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: url('../images/backbg.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.log{
+  margin-top: 10px;
+  margin-left: 13px;
+  margin-bottom: 15.7px;
+}
+
+.content{
+  width: 100%;
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+  /* border: 1px solid red; */
+  position: relative;
+}
+
+.content-text{
+  position: absolute;
+  top: 45px;
+  width: 267px;
+  height: 85.4px;
+}
+
+.center-img{
+  width: 340px;
+  height: 296px;
+}
+
+.icon-text{
+  margin-top: 16.6px;
+  width: 331px;
+  height: 50px;
+}
+
+.input-content{
+  margin-top: 30px;
+  width: 300px;
+  height: 44px;
+  background: #fff;
+  border-radius:4px;
+  -moz-border-radius:4px; /* Old Firefox */
+  display: flex;
+  align-items: center;
+}
+
+.input-content .icon{
+  width: 13px;
+  height: 19.5px;
+  margin-left: 13px;
+}
+
+.input-content .input{
+  margin-left: 10px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 14px;
+} 
+
+.footer-button{
+  width: 300px;
+  height: 44px;
+  background: url('../images/button.png');
+  text-align: center;
+  line-height: 44px;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 17px;
+}
