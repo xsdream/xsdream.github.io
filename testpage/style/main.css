@@ -1,22 +1,39 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: PingFangSC-Medium;
+  font-family: PingFangSC-Semibold;
 }
+
+.hidden{
+  display: none;
+}
+
+input[disabled]{
+  background-color: #fff!important;
+  height: 80%!important;
+}
+
 body {
-  height: 100vh;
-  background: url('../images/backbg.png');
+  height: 100%;
+  /* background: url('../images/backbg.png'); */
+
+  background: -webkit-linear-gradient(0deg, #5856D6 6%, #66138D 100%, #C644FC 100%); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(0deg, #5856D6 6%, #66138D 100%, #C644FC 100%); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(0deg, #5856D6 6%, #66138D 100%, #C644FC 100%); /* Firefox 3.6 - 15 */
+  background: linear-gradient(0deg, #5856D6 6%, #66138D 100%, #C644FC 100%); /* 标准的语法 */
+
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
   display: flex;
   align-items: center;
+  position: relative;
 }
 .log{
   position: fixed;
-  top: 0.625rem;
-  left: 0.8125rem;
+  top: 13px;
+  left: 13px;
 }
 .content{
   width: 100%;
@@ -29,51 +46,129 @@ body {
 }
 .content-text{
   position: absolute;
-  top: 2.8125rem;
-  width: 16.6875rem;
-  height: 5.375rem;
+  top: 65px;
+  /* width: 262px; */
+  /* height: 60px; */
 }
 .center-img{
-  width: 21.25rem;
-  height: 18.5rem;
+  width: 100%;
+  height: 227px;
 }
 .icon-text{
-  margin-top: 1.0625rem;
-  width: 20.6875rem;
-  height: 3.125rem;
+  position: absolute;
+  top: 184px;
 }
 .input-content{
-  margin-top: 1.875rem;
-  width: 18.75rem;
-  height: 2.75rem;
+  margin-top: 19px;
+  width: 317px;
+  /* height: 355px; */
   background: #fff;
-  border-radius:0.25rem;
-  -moz-border-radius:0.25rem;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
  /* Old Firefox */
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.input-content .title1{
+  margin-top: 11px;
+  font-size: 16px;
+  color: #2A2A2A;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 18px;
+  margin-bottom: 3px;
+}
+
+.input-content .title2{
+  font-size: 12px;
+  color: #666666;
+  letter-spacing: 0.5px;
+  text-align: center;
+  line-height: 18px;
+  margin-bottom: 7px;
+}
+
+.input-content .input{
+  margin-top: 9px;
+  height: 40px;
+  width: 280px;
+  border: none;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.input-content .input .item{
+  height: 90%;
+  width: 80%;
+  border: none;
+}
+
+.input-content .input .icon{
+  margin-right: 2px;
+  position: relative;
+  right: 5px;
+}
+
+.input-content .submit{
+  margin-top: 25px;
+  width: 250px;
+  height: 39px;
+  background: -webkit-linear-gradient(-90deg, #FF6243 0%, #FF0072 100%); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(-90deg, #FF6243 0%, #FF0072 100%); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(-90deg, #FF6243 0%, #FF0072 100%); /* Firefox 3.6 - 15 */
+  background: linear-gradient(-90deg, #FF6243 0%, #FF0072 100%); /* 标准的语法 */
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.09);
+  border-radius: 100px;
+  text-align: center;
+  line-height: 39px;
+  color:#fff;
+}
+
+.input-content .telphone{
+  margin-top: 9px;
+  margin-bottom: 12px;
+  font-size: 12px;
+  color: #F5A623;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  background: url('../images/footer.png') no-repeat center 5px;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 67px;
+  text-align: center;
+  font-size: 10px;
+  color: #fff;
+  letter-spacing: 0.3px;
+  line-height: 14px;
   display: flex;
   align-items: center;
 }
-.input-content .icon{
-  width: 0.8125rem;
-  height: 1.25rem;
-  margin-left: 0.8125rem;
-}
-.input-content .input{
-  margin-left: 0.625rem;
+
+.cover {
+  position: fixed;
+  left:0px;
+  top:0px;
+  z-index: 99999;
+  width: 100%;
   height: 100%;
-  width: 80%;
-  border: none;
-  font-size: 0.875rem;
+  background: rgba(0, 0, 0, 0.8)
 }
-.footer-button{
-  width: 18.75rem;
-  height: 2.75rem;
-  background: url('../images/button.png');
-  text-align: center;
-  line-height: 2.75rem;
-  color: #fff;
-  font-size: 0.875rem;
-  margin-top: 1.0625rem;
-  border-radius:0.25rem;
-  -moz-border-radius:0.25rem;
+
+.cover .live_weixin{
+  width: 100%;
+}
+
+.hidden{
+  display: none;
 }
